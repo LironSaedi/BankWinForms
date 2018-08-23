@@ -94,11 +94,14 @@
             // 
             // UsernameForgetFullness
             // 
-            this.UsernameForgetFullness.Location = new System.Drawing.Point(326, 260);
+            this.UsernameForgetFullness.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("UsernameForgetFullness.BackgroundImage")));
+            this.UsernameForgetFullness.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsernameForgetFullness.ForeColor = System.Drawing.Color.SlateGray;
+            this.UsernameForgetFullness.Location = new System.Drawing.Point(12, 197);
             this.UsernameForgetFullness.Name = "UsernameForgetFullness";
-            this.UsernameForgetFullness.Size = new System.Drawing.Size(549, 23);
+            this.UsernameForgetFullness.Size = new System.Drawing.Size(1136, 102);
             this.UsernameForgetFullness.TabIndex = 4;
-            this.UsernameForgetFullness.Text = "IF YOU FORGOT YOUR USERNAME AND YOU ALREADY HAVE AN ACCOUNT CLICK HERE";
+            this.UsernameForgetFullness.Text = "Forget Password";
             this.UsernameForgetFullness.UseVisualStyleBackColor = true;
             this.UsernameForgetFullness.Click += new System.EventHandler(this.UsernameForgetFullness_Click);
             // 
