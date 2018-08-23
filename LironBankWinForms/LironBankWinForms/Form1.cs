@@ -18,7 +18,7 @@ namespace LironBankWinForms
        
 
         Bank bank = new Bank();
-        bool Continue = false;
+       public bool Continue = false;
 
         
         public Form1()
@@ -41,8 +41,28 @@ namespace LironBankWinForms
             string textBoxUser = UsernameTextBox.Text;
             string textBoxPass = passwordTextBox.Text;
             bool checkerUser = false;
+            if(bank.Login(textBoxUser, textBoxPass) )
+            {
+                LoginLabel.Visible = true;
+                LoginLabel.Text = "         You Have Logged In          ";
+            }
+            else
+            {
+                LoginLabel.Visible = true;
+                LoginLabel.Text = "         You Have Failed To Login            ";
+            }
 
-            //alex is cool
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UsernameForgetFullness_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

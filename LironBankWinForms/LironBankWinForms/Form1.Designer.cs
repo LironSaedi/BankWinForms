@@ -32,15 +32,20 @@
             this.Finished = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.label2 = new System.Windows.Forms.Label();
             this.UsernameTextBox = new System.Windows.Forms.TextBox();
             this.UsernameForgetFullness = new System.Windows.Forms.Button();
+            this.LoginLabel = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // Finished
             // 
-            this.Finished.Location = new System.Drawing.Point(337, 101);
+            this.Finished.Location = new System.Drawing.Point(522, 126);
             this.Finished.Name = "Finished";
             this.Finished.Size = new System.Drawing.Size(143, 23);
             this.Finished.TabIndex = 0;
@@ -52,7 +57,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(16, 63);
+            this.label1.Location = new System.Drawing.Point(28, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(169, 13);
             this.label1.TabIndex = 1;
@@ -62,7 +67,7 @@
             // passwordTextBox
             // 
             this.passwordTextBox.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.passwordTextBox.Location = new System.Drawing.Point(603, 129);
+            this.passwordTextBox.Location = new System.Drawing.Point(890, 129);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(154, 20);
             this.passwordTextBox.TabIndex = 0;
@@ -71,7 +76,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(600, 63);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(877, 79);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(167, 13);
             this.label2.TabIndex = 2;
@@ -88,12 +94,79 @@
             // 
             // UsernameForgetFullness
             // 
-            this.UsernameForgetFullness.Location = new System.Drawing.Point(144, 281);
+            this.UsernameForgetFullness.Location = new System.Drawing.Point(326, 260);
             this.UsernameForgetFullness.Name = "UsernameForgetFullness";
             this.UsernameForgetFullness.Size = new System.Drawing.Size(549, 23);
             this.UsernameForgetFullness.TabIndex = 4;
             this.UsernameForgetFullness.Text = "IF YOU FORGOT YOUR USERNAME AND YOU ALREADY HAVE AN ACCOUNT CLICK HERE";
             this.UsernameForgetFullness.UseVisualStyleBackColor = true;
+            this.UsernameForgetFullness.Click += new System.EventHandler(this.UsernameForgetFullness_Click);
+            // 
+            // LoginLabel
+            // 
+            this.LoginLabel.AutoSize = true;
+            this.LoginLabel.BackColor = System.Drawing.Color.Gold;
+            this.LoginLabel.Location = new System.Drawing.Point(496, 181);
+            this.LoginLabel.Name = "LoginLabel";
+            this.LoginLabel.Size = new System.Drawing.Size(196, 13);
+            this.LoginLabel.TabIndex = 5;
+            this.LoginLabel.Text = "                                                               ";
+            this.LoginLabel.Visible = false;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(334, 388);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(85, 17);
+            this.radioButton1.TabIndex = 6;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(334, 411);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(85, 17);
+            this.radioButton2.TabIndex = 7;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "radioButton2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(334, 434);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(85, 17);
+            this.radioButton3.TabIndex = 8;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "radioButton3";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(334, 457);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(85, 17);
+            this.radioButton4.TabIndex = 9;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "radioButton4";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(334, 480);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(85, 17);
+            this.radioButton5.TabIndex = 10;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "radioButton5";
+            this.radioButton5.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -101,7 +174,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1149, 841);
+            this.Controls.Add(this.radioButton5);
+            this.Controls.Add(this.radioButton4);
+            this.Controls.Add(this.radioButton3);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.LoginLabel);
             this.Controls.Add(this.UsernameForgetFullness);
             this.Controls.Add(this.UsernameTextBox);
             this.Controls.Add(this.label2);
@@ -111,6 +191,7 @@
             this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,10 +202,15 @@
         private System.Windows.Forms.Button Finished;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox passwordTextBox;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox UsernameTextBox;
         private System.Windows.Forms.Button UsernameForgetFullness;
+        private System.Windows.Forms.Label LoginLabel;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton5;
     }
 }
 
