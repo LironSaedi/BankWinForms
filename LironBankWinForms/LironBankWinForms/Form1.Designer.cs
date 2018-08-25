@@ -41,6 +41,7 @@
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Finished
@@ -95,11 +96,12 @@
             // UsernameForgetFullness
             // 
             this.UsernameForgetFullness.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("UsernameForgetFullness.BackgroundImage")));
+            this.UsernameForgetFullness.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.UsernameForgetFullness.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsernameForgetFullness.ForeColor = System.Drawing.Color.SlateGray;
-            this.UsernameForgetFullness.Location = new System.Drawing.Point(12, 197);
+            this.UsernameForgetFullness.Location = new System.Drawing.Point(1, 197);
             this.UsernameForgetFullness.Name = "UsernameForgetFullness";
-            this.UsernameForgetFullness.Size = new System.Drawing.Size(1136, 102);
+            this.UsernameForgetFullness.Size = new System.Drawing.Size(1559, 144);
             this.UsernameForgetFullness.TabIndex = 4;
             this.UsernameForgetFullness.Text = "Forget Password";
             this.UsernameForgetFullness.UseVisualStyleBackColor = true;
@@ -119,50 +121,55 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
             this.radioButton1.Location = new System.Drawing.Point(334, 388);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(212, 17);
             this.radioButton1.TabIndex = 6;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "If You Forgot Your Password Click Here";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.UseVisualStyleBackColor = false;
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
+            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
             this.radioButton2.Location = new System.Drawing.Point(334, 411);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(271, 17);
             this.radioButton2.TabIndex = 7;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "If You Would Like To Create An Account Click Here";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.UseVisualStyleBackColor = false;
             // 
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
+            this.radioButton3.BackColor = System.Drawing.Color.Transparent;
             this.radioButton3.Location = new System.Drawing.Point(334, 434);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(336, 17);
             this.radioButton3.TabIndex = 8;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "If You Would Like To Deposit Money To Your Account Click Here";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.UseVisualStyleBackColor = false;
             // 
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
+            this.radioButton4.BackColor = System.Drawing.Color.Transparent;
             this.radioButton4.Location = new System.Drawing.Point(334, 457);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(357, 17);
             this.radioButton4.TabIndex = 9;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "If You Would Like To Withdrawl Money From Your Account Click Here";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.UseVisualStyleBackColor = false;
             // 
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
+            this.radioButton5.BackColor = System.Drawing.Color.Transparent;
             this.radioButton5.Location = new System.Drawing.Point(334, 480);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(393, 17);
@@ -170,7 +177,17 @@
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "If You Would Like To Exit Exit Exit Exit  Exit  Exit  Exit  Exit  Exit Exit Click" +
     " Here";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button1.Location = new System.Drawing.Point(580, 384);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(344, 21);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "CLICK HERE IF YOU WANT TO GET HACKED";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -179,7 +196,8 @@
             this.BackColor = System.Drawing.Color.Aqua;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1149, 841);
+            this.ClientSize = new System.Drawing.Size(1561, 841);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.radioButton5);
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton3);
@@ -194,7 +212,7 @@
             this.Controls.Add(this.Finished);
             this.DoubleBuffered = true;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "CLICK HERE IF YOU WANT TO GET HACKED";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -215,6 +233,7 @@
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.Button button1;
     }
 }
 
