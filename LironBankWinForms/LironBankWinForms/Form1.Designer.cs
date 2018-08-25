@@ -36,7 +36,6 @@
             this.UsernameTextBox = new System.Windows.Forms.TextBox();
             this.UsernameForgetFullness = new System.Windows.Forms.Button();
             this.LoginLabel = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
@@ -118,18 +117,6 @@
             this.LoginLabel.Text = "                                                               ";
             this.LoginLabel.Visible = false;
             // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton1.Location = new System.Drawing.Point(334, 388);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(212, 17);
-            this.radioButton1.TabIndex = 6;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "If You Forgot Your Password Click Here";
-            this.radioButton1.UseVisualStyleBackColor = false;
-            // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
@@ -181,12 +168,12 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button1.Location = new System.Drawing.Point(580, 384);
+            this.button1.BackColor = System.Drawing.Color.Aquamarine;
+            this.button1.Location = new System.Drawing.Point(334, 503);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(344, 21);
+            this.button1.Size = new System.Drawing.Size(216, 23);
             this.button1.TabIndex = 11;
-            this.button1.Text = "CLICK HERE IF YOU WANT TO GET HACKED";
+            this.button1.Text = "Click Here Once Finsihed";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // Form1
@@ -202,7 +189,6 @@
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.LoginLabel);
             this.Controls.Add(this.UsernameForgetFullness);
             this.Controls.Add(this.UsernameTextBox);
@@ -228,7 +214,6 @@
         private System.Windows.Forms.TextBox UsernameTextBox;
         private System.Windows.Forms.Button UsernameForgetFullness;
         private System.Windows.Forms.Label LoginLabel;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;

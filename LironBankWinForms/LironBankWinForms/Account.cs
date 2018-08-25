@@ -26,5 +26,31 @@ namespace LironBankWinForms
             }
             return false;
         }
+
+        public bool Deposit(int amount)
+        {
+            if (amount < 0)
+            {
+                return false;
+            }
+            money += amount;
+            return true;
+        }
+
+
+        public bool Withdrawl(int amount)
+        {
+            if (amount > money)
+            {
+                return false;
+            }
+            else
+            {
+                money = money - amount;
+            }
+            return false;
+        }
+
+
     }
 }
